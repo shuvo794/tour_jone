@@ -26,7 +26,7 @@ const Navigation = () => {
   const history = useHistory();
   return (
     <Box className="navbar">
-      <Container sx={{ py: 3, mb: 5 }}>
+      <Container sx={{ mb: 2, pt: 2 }}>
         <Box
           sx={{
             display: "flex",
@@ -37,11 +37,7 @@ const Navigation = () => {
         >
           <Box sx={{ alignSelf: "flex-start" }}>
             <NavLink to="/home">
-              <img
-                style={{ width: "100px", height: "80px" }}
-                src="https://i.ibb.co/yPCncsc/depositphotos-125022518-stock-illustration-m-letter-logo-template.png"
-                alt=""
-              />
+              <h2>Travel_Jone</h2>
             </NavLink>
           </Box>
           <Box

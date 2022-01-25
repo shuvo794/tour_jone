@@ -14,7 +14,7 @@ const containerStyle = {
 const Home = () => {
   return (
     <>
-      <div style={containerStyle}>
+      <div >
         <Navigation></Navigation>
         <HomeBanner></HomeBanner>
       </div>

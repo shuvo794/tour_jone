@@ -26,7 +26,7 @@ import AddProduct from "../ForAdmin/AddProduct/AddProduct";
 import MakeAdmin from "../ForAdmin/MakeAdmin/MakeAdmin";
 import ManageProducts from "../ForAdmin/ManageProducts/ManageProducts";
 import "./Dashboard.css";
-const drawerWidth = 240;
+const drawerWidth = 250;
 
 function Dashboard(props) {
   let { path, url } = useRouteMatch();
@@ -60,13 +60,13 @@ function Dashboard(props) {
       className="dashboard-drawer"
     >
       <Toolbar />
-      {user?.email&&admin? (
+      {user?.email && admin ? (
         <Box
           sx={{
             fontFamily: "var(--dusis-font)",
             display: "flex",
             flexDirection: "column",
-            ml: -8,
+            ml: 0,
             mt: 25,
             textTransform: "none",
           }}
