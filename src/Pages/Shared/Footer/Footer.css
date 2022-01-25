@@ -1,0 +1,33 @@
+.footerStyle {
+  background: #120d48;
+  color: #fff;
+  font-family: var(--nunito);
+  padding: 50px 0;
+  margin-top: 80px;
+}
+.footer-links {
+  margin: 12px 0;
+}
+.footer-links:hover {
+  color: var(--color);
+  cursor: pointer;
+}
+.footer-icons {
+  font-size: 30px;
+  padding: 8px;
+  color: #fff;
+  background: var(--button-bg);
+  margin-right: 20px;
+  border-radius: 50%;
+  text-align: left;
+}
+.subscribe {
+  margin: 0.8rem 0;
+  width: 70%;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+.subscribe:focus {
+  outline: var(--color);
+}

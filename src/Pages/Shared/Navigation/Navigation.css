@@ -1,0 +1,14 @@
+@media (max-width: 900px) {
+  .nav-links.active {
+    display: block;
+  }
+  .navbar-link {
+    margin: 8px auto;
+  }
+  .navbar-link:hover {
+    background: var(--button-bg) !important;
+  }
+  .navbar-link:hover button {
+    color: white !important;
+  }
+}
