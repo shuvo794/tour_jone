@@ -26,11 +26,7 @@ const ProductDetail = ({ id }) => {
           />
         </Grid>
         <Grid item xs={12} md={7} sx={{ textAlign: "left" }}>
-          {/* <img
-            src="https://wavio.b-cdn.net/wp-content/uploads/2020/12/Wave.png"
-            style={{ width: "200px", height: "10px", marginBottom: "20px" }}
-            alt=""
-          />{" "} */}
+          
           <br />
           <Rating
             initialRating={singleProduct.rating}
