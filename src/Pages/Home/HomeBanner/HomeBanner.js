@@ -1,5 +1,8 @@
 import React from "react";
-
+import p1 from "../../../images/Travel/T1.jpg";
+import p2 from "../../../images/Travel/T2.jpg";
+import p3 from "../../../images/Travel/T3.jpg";
+import p4 from "../../../images/Travel/T4.jpg";
 const HomeBanner = () => {
   return (
     <div
@@ -31,21 +34,39 @@ const HomeBanner = () => {
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="..." />
+          <img
+            src={p1}
+            width="100%"
+            height="750px"
+            class="d-block "
+            alt="..."
+          />
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
+          <img
+            src={p2}
+            width="100%"
+            height="750px"
+            class="d-block "
+            alt="..."
+          />
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
+          <img
+            src={p3}
+            width="100%"
+            height="750px"
+            class="d-block "
+            alt="..."
+          />
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
