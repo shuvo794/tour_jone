@@ -78,12 +78,12 @@ function Dashboard(props) {
           </NavLink>
           <NavLink style={dashboardLink} to={`${url}/manageAllOrders`}>
             <Button color="inherit" style={dashboardButton}>
-              Manage All Orders
+              Manage All Bookings
             </Button>
           </NavLink>
           <NavLink style={dashboardLink} to={`${url}/AddProduct`}>
             <Button color="inherit" style={dashboardButton}>
-              Add a product
+              Add a Places
             </Button>
           </NavLink>
           <NavLink style={dashboardLink} to={`${url}/makeAdmin`}>
@@ -93,7 +93,7 @@ function Dashboard(props) {
           </NavLink>
           <NavLink style={dashboardLink} to={`${url}/manageProducts`}>
             <Button color="inherit" style={dashboardButton}>
-              Manage Products
+              ManageBooking
             </Button>
           </NavLink>
           <Button
@@ -117,26 +117,6 @@ function Dashboard(props) {
             textTransform: "none",
           }}
         >
-          <NavLink style={dashboardLink} to={`/`}>
-            <Button color="inherit" style={dashboardButton}>
-              Home
-            </Button>
-          </NavLink>
-          <NavLink style={dashboardLink} to={`${url}/myOrders`}>
-            <Button color="inherit" style={dashboardButton}>
-              My Orders
-            </Button>
-          </NavLink>
-          <NavLink style={dashboardLink} to={`${url}/pay`}>
-            <Button color="inherit" style={dashboardButton}>
-              Pay
-            </Button>
-          </NavLink>
-          <NavLink style={dashboardLink} to={`${url}/review`}>
-            <Button color="inherit" style={dashboardButton}>
-              Review
-            </Button>
-          </NavLink>
           <Button
             color="inherit"
             style={dashboardButton}
@@ -146,6 +126,27 @@ function Dashboard(props) {
           >
             Log Out
           </Button>
+          <NavLink style={dashboardLink} to={`${url}/pay`}>
+            <Button color="inherit" style={dashboardButton}>
+              Pay Your Cost
+            </Button>
+          </NavLink>
+          <NavLink style={dashboardLink} to={`/`}>
+            <Button color="inherit" style={dashboardButton}>
+              Home
+            </Button>
+          </NavLink>
+          <NavLink style={dashboardLink} to={`${url}/myOrders`}>
+            <Button color="inherit" style={dashboardButton}>
+              My Booked Places
+            </Button>
+          </NavLink>
+
+          <NavLink style={dashboardLink} to={`${url}/review`}>
+            <Button color="inherit" style={dashboardButton}>
+              Visitor Experiance
+            </Button>
+          </NavLink>
         </Box>
       )}
     </Box>

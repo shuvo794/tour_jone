@@ -24,7 +24,7 @@ const AllProducts = ({ products, sliceNumber }) => {
           style={bannerFontStyle}
           sx={{ color: "var(--color)" }}
         >
-          Turist Bolgs
+          WORLD TOURIST BLOGS
         </Typography>
         <Typography variant="body1" gutterBottom style={bannerFontStyle}>
           Our Places

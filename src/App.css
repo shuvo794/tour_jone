@@ -44,3 +44,30 @@ a {
     transform: rotate(360deg);
   }
 }
+
+
+
+.pagination {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin-right: 20px;
+  padding: 6px 12px;
+  border: 1px solid black;
+
+  color: #000;
+  outline: none;
+  border-radius: 20px;
+  transition: .3s linear;
+  font-weight: 700;
+}
+
+
+
+.pagination .selected {
+  background-color: #16120d;
+  color: white;
+}

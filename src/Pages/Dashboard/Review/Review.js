@@ -28,7 +28,7 @@ const Review = () => {
   return (
     <Container>
       <Typography variant="h2" style={reviewStyle} sx={{ my: 4 }}>
-        REVIEW <span style={{ color: "var(--color)" }}>OUR SERVICE</span>
+        Experienced <span style={{ color: "var(--color)" }}>People share Opinions</span>
       </Typography>
       <Box
         sx={{ width: { xs: "90%", sm: "80%", md: "80%" }, mx: "auto", my: 4 }}
