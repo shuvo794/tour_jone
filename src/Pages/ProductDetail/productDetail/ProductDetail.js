@@ -5,7 +5,7 @@ import { useHistory } from "react-router";
 const ProductDetail = ({ id }) => {
   const [singleProduct, setSingleProduct] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://young-wildwood-97255.herokuapp.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => setSingleProduct(data));
   }, [id]);

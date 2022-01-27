@@ -14,15 +14,16 @@ const Products = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products?page=${page}&&size=${size}`)
-      .then(res => res.json())
-      .then(data =>{
+    fetch(
+      `https://young-wildwood-97255.herokuapp.com/products?page=${page}&&size=${size}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
         setProducts(data.products);
         const count = data.count;
         const pageNumber = Math.ceil(count / size);
-        setPageCount(pageNumber)
-      }
-        )   
+        setPageCount(pageNumber);
+      });   
   }, [page]);
   const containerStyle = {
     // backgroundImage: `url("https://i.ibb.co/7Q50Zr6/product-Bg.png")`,

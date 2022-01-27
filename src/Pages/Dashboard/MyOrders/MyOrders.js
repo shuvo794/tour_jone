@@ -13,7 +13,7 @@ const MyOrders = () => {
   const [myOrders, setMyOrders] = useState([]);
   const { user } = useAuth();
   useEffect(() => {
-    fetch(`http://localhost:5000/orders/${user?.email}`)
+    fetch(`https://young-wildwood-97255.herokuapp.com/orders/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setMyOrders(data);
@@ -23,7 +23,7 @@ const MyOrders = () => {
     // eslint-disable-next-line no-restricted-globals
     const confirmation = confirm("Are you sure you want to delete this order?");
     if (confirmation) {
-      fetch(`http://localhost:5000/orders/${id}`, {
+      fetch(`https://young-wildwood-97255.herokuapp.com/orders/${id}`, {
         method: "DELETE",
         headers: { "content-type": "application/json" },
       })

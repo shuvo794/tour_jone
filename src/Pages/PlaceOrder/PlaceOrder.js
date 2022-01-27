@@ -14,7 +14,7 @@ const PlaceOrder = () => {
   const { id } = useParams();
   const [orderedProduct, setOrderedProduct] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://young-wildwood-97255.herokuapp.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => {
         const { _id, ...rest } = data;
@@ -24,7 +24,7 @@ const PlaceOrder = () => {
   console.log(orderedProduct);
   const onSubmit = (data) => {
     let newData = { ...data, ...orderedProduct, status: "pending" };
-    fetch("http://localhost:5000/orders", {
+    fetch("https://young-wildwood-97255.herokuapp.com/orders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newData),

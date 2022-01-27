@@ -12,7 +12,7 @@ const Review = () => {
     fontWeight: 600,
   };
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://young-wildwood-97255.herokuapp.com/reviews", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
