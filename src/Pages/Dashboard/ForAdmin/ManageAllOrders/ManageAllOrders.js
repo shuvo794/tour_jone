@@ -72,7 +72,7 @@ const ManageAllProducts = () => {
           fontWeight: 600,
         }}
       >
-        All Orders
+        All Bookings
       </Typography>
       <Grid container spacing={3} sx={{ boxShadow: "var(--box-shadow)" }}>
         {allOrders.map((order) => (

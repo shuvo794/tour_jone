@@ -19,7 +19,7 @@ const ManageProducts = () => {
   useEffect(() => {
     fetch("http://localhost:5000/products")
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => setProducts(data.products));
   }, [isDeleted]);
   const handleDeleteProduct = (id) => {
     // eslint-disable-next-line no-restricted-globals
