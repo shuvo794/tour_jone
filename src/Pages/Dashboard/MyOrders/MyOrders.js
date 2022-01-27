@@ -42,7 +42,7 @@ const MyOrders = () => {
           fontWeight: 600,
         }}
       >
-        My Orders
+        My Booked Places
       </Typography>
       <Grid container spacing={3} sx={{ boxShadow: "var(--box-shadow)" }}>
         {myOrders.map((order) => (
