@@ -8,6 +8,7 @@ import {
   signOut,
   GoogleAuthProvider,
   signInWithPopup,
+  sendEmailVerification,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 
@@ -25,6 +26,7 @@ const useFirebase = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
+        verifyEmail();
         updateProfile(auth.currentUser, {
           displayName: name,
         })
@@ -43,6 +45,13 @@ const useFirebase = () => {
       .finally(() => {
         setIsLoading(false);
       });
+  };
+
+  //email verification Massage
+  const verifyEmail = () => {
+    sendEmailVerification(auth.currentUser).then((result) => {
+      // console.log(result);
+    });
   };
   // sign in a user with firebase authentication
   const singInUser = ({ email, password }, location, history) => {
