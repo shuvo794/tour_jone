@@ -72,7 +72,7 @@ const Navigation = () => {
                 <Button style={buttonStyle}>Home</Button>
               </NavLink>
               <NavLink to="/explore" className="navbar-link">
-                <Button style={buttonStyle}>Explore</Button>
+                <Button style={buttonStyle}>Travel Available</Button>
               </NavLink>
               {user.email && (
                 <NavLink to="/dashboard" className="navbar-link">
