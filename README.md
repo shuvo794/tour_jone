@@ -1,6 +1,6 @@
 # Project name and live site link
 
-Wivo client side live link [Wivo](https://wivo-4bda2.web.app/).
+
 
 # Functionalities and used cases of the website
 
