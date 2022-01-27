@@ -33,7 +33,7 @@ const Products = () => {
   return (
     <div style={containerStyle}>
       <Container sx={{ mb: 10, mt: 7 }}>
-        {products.length ? (
+        {products?.length ? (
           <>
             <Product products={products} ></Product>
             <div className="pagination">
