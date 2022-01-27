@@ -27,7 +27,7 @@ const AddProduct = () => {
   return (
     <Container>
       <Typography variant="h3" style={contactStyle}>
-        Add A <span style={{ color: "var(--color)" }}>PRODUCT</span>
+        Add A <span style={{ color: "var(--color)" }}>PLACES</span>
       </Typography>
       <Box
         sx={{ width: { xs: "90%", sm: "80%", md: "80%" }, mx: "auto", my: 4 }}
@@ -43,12 +43,12 @@ const AddProduct = () => {
         <form action="" className="form" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
-            placeholder="Enter Product Name*"
+            placeholder="Enter Visiting Place Name*"
             {...register("name")}
           />
           <input
             type="text"
-            placeholder="Enter Product Price*"
+            placeholder="Enter Travel Cost*"
             {...register("price")}
           />
           <input
@@ -58,7 +58,7 @@ const AddProduct = () => {
           />
           <input
             type="text"
-            placeholder="Enter Product Rating*"
+            placeholder="Enter Place Rating*"
             {...register("rating")}
           />
           <textarea
@@ -66,7 +66,7 @@ const AddProduct = () => {
             id=""
             cols="22"
             rows="10"
-            placeholder="Enter a short description of the product"
+            placeholder="Enter a short description to Traveled Place"
             {...register("description")}
           ></textarea>
           <Button
