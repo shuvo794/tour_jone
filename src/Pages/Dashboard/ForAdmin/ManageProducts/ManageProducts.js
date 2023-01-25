@@ -17,7 +17,7 @@ const ManageProducts = () => {
     fontWeight: "600",
   };
   useEffect(() => {
-    fetch("https://young-wildwood-97255.herokuapp.com/products")
+    fetch("https://tour-jone-server.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setProducts(data.products));
   }, [isDeleted]);
@@ -27,7 +27,7 @@ const ManageProducts = () => {
       "Are you sure you want to delete the product ?"
     );
     if (confirmation) {
-      fetch(`https://young-wildwood-97255.herokuapp.com/products/${id}`, {
+      fetch(`https://tour-jone-server.vercel.app/products/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

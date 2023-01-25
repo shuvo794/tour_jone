@@ -14,12 +14,12 @@ const ManageAllProducts = () => {
   const [isShipped, setIsShipped] = useState(false);
   const [isDeleted, setIsDeleted] = useState(false);
   useEffect(() => {
-    fetch("https://young-wildwood-97255.herokuapp.com/orders")
+    fetch("https://tour-jone-server.vercel.app/orders")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [isShipped, isDeleted]);
   const handleShipping = (id) => {
-    fetch(`https://young-wildwood-97255.herokuapp.com/orders?id=${id}`, {
+    fetch(`https://tour-jone-server.vercel.app/orders?id=${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
     })
@@ -37,7 +37,7 @@ const ManageAllProducts = () => {
       "Are you sure you want to delete this users order?"
     );
     if (confirmation) {
-      fetch(`https://young-wildwood-97255.herokuapp.com/orders/${id}`, {
+      fetch(`https://tour-jone-server.vercel.app/orders/${id}`, {
         method: "DELETE",
         headers: { "content-type": "application/json" },
       })

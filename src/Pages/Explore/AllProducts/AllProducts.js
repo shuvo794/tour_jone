@@ -5,7 +5,7 @@ import Product from "../../Shared/product/product";
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("https://young-wildwood-97255.herokuapp.com/products")
+    fetch("https://tour-jone-server.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setProducts(data.products));
   }, []);

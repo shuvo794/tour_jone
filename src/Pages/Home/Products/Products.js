@@ -11,7 +11,7 @@ const Products = () => {
 
   useEffect(() => {
     fetch(
-      `https://young-wildwood-97255.herokuapp.com/products?page=${page}&&size=${size}`
+      `https://tour-jone-server.vercel.app/products?page=${page}&&size=${size}`
     )
       .then((res) => res.json())
       .then((data) => {

@@ -6,7 +6,7 @@ const MakeAdmin = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     const user = { email: data.email };
-    fetch("https://young-wildwood-97255.herokuapp.com/users/admin", {
+    fetch("https://tour-jone-server.vercel.app/users/admin", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(user),

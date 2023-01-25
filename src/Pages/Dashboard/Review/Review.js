@@ -12,7 +12,7 @@ const Review = () => {
     fontWeight: 600,
   };
   const onSubmit = (data) => {
-    fetch("https://young-wildwood-97255.herokuapp.com/reviews", {
+    fetch("https://tour-jone-server.vercel.app/reviews", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
