@@ -37,10 +37,14 @@ const ManageAllProducts = () => {
       "Are you sure you want to delete this users order?"
     );
     if (confirmation) {
-      fetch(`https://tour-jone-server.vercel.app/orders/${id}`, {
-        method: "DELETE",
-        headers: { "content-type": "application/json" },
-      })
+      fetch(
+        `https://tour-jone-server.vercel.app
+/orders/${id}`,
+        {
+          method: "DELETE",
+          headers: { "content-type": "application/json" },
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount) {

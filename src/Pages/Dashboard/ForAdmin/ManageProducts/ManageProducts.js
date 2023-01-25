@@ -27,9 +27,13 @@ const ManageProducts = () => {
       "Are you sure you want to delete the product ?"
     );
     if (confirmation) {
-      fetch(`https://tour-jone-server.vercel.app/products/${id}`, {
-        method: "DELETE",
-      })
+      fetch(
+        `https://tour-jone-server.vercel.app
+/products/${id}`,
+        {
+          method: "DELETE",
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount) {
