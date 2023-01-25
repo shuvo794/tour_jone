@@ -1,11 +1,9 @@
 import { Container } from "@mui/material";
 import React, { useState, useEffect } from "react";
-
 import Product from "../../Shared/product/product";
-import { useHistory } from "react-router";
+
 import { CircularProgress } from "@mui/material";
 const Products = () => {
-  const history = useHistory();
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(0);
   const [pageCount, setPageCount] = useState(0);
