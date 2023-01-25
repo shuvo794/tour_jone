@@ -5,12 +5,12 @@ import Contact from '../Contact/Contact';
 import HomeBanner from '../HomeBanner/HomeBanner';
 import Products from '../Products/Products';
 import Review from '../Review/Review';
-const containerStyle = {
-  backgroundColor: "#ecf0f1",
-  // backgroundImage: `url("https://i.ibb.co/f4Ryhq6/homeBg.png")`,
-  backgroundSize: "32% auto",
-  backgroundRepeat: "no-repeat",
-};
+// const containerStyle = {
+//   backgroundColor: "#ecf0f1",
+//   // backgroundImage: `url("https://i.ibb.co/f4Ryhq6/homeBg.png")`,
+//   backgroundSize: "32% auto",
+//   backgroundRepeat: "no-repeat",
+// };
 const Home = () => {
   return (
     <>
