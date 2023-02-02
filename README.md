@@ -27,6 +27,4 @@ Font Awesome Icons have been used to design.
 HTML & CSS
 HTML & CSS is a core part for building a site. I have also used HTML & CSS.
 
-Firebase LIVE SITE LINK
 
-LiveSite : tour-site-client.web.app
