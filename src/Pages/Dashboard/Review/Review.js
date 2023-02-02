@@ -12,7 +12,7 @@ const Review = () => {
     fontWeight: 600,
   };
   const onSubmit = (data) => {
-    fetch("https://tour-jone-server.vercel.app/reviews", {
+    fetch("https://tour-jone-server.onrender.com/reviews", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

@@ -17,7 +17,7 @@ const ManageProducts = () => {
     fontWeight: "600",
   };
   useEffect(() => {
-    fetch("https://tour-jone-server.vercel.app/products")
+    fetch("https://tour-jone-server.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data.products));
   }, [isDeleted]);
@@ -28,7 +28,7 @@ const ManageProducts = () => {
     );
     if (confirmation) {
       fetch(
-        `https://tour-jone-server.vercel.app
+        `https://tour-jone-server.onrender.com
 /products/${id}`,
         {
           method: "DELETE",

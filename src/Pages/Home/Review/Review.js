@@ -7,7 +7,7 @@ import Slider from "react-slick";
 const Review = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("https://tour-jone-server.vercel.app/reviews")
+    fetch("https://tour-jone-server.onrender.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);

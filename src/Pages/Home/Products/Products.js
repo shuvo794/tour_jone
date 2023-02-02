@@ -10,7 +10,7 @@ const Products = () => {
 
   useEffect(() => {
     fetch(
-      `https://tour-jone-server.vercel.app/products?page=${page}&&size=${size}`
+      `https://tour-jone-server.onrender.com/products?page=${page}&&size=${size}`
     )
       .then((res) => res.json())
       .then((data) => {

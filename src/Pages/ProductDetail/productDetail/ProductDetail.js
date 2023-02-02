@@ -5,7 +5,7 @@ import { useHistory } from "react-router";
 const ProductDetail = ({ id }) => {
   const [singleProduct, setSingleProduct] = useState({});
   useEffect(() => {
-    fetch(`https://tour-jone-server.vercel.app/products/${id}`)
+    fetch(`https://tour-jone-server.onrender.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => setSingleProduct(data));
   }, [id]);

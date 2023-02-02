@@ -13,7 +13,7 @@ const MyOrders = () => {
   const [myOrders, setMyOrders] = useState([]);
   const { user } = useAuth();
   useEffect(() => {
-    fetch(`https://tour-jone-server.vercel.app
+    fetch(`https://tour-jone-server.onrender.com
 /orders/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
@@ -25,7 +25,7 @@ const MyOrders = () => {
     const confirmation = confirm("Are you sure you want to delete this order?");
     if (confirmation) {
       fetch(
-        `https://tour-jone-server.vercel.app
+        `https://tour-jone-server.onrender.com
 /orders/${id}`,
         {
           method: "DELETE",

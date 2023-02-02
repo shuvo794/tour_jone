@@ -14,12 +14,12 @@ const ManageAllProducts = () => {
   const [isShipped, setIsShipped] = useState(false);
   const [isDeleted, setIsDeleted] = useState(false);
   useEffect(() => {
-    fetch("https://tour-jone-server.vercel.app/orders")
+    fetch("https://tour-jone-server.onrender.com/orders")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [isShipped, isDeleted]);
   const handleShipping = (id) => {
-    fetch(`https://tour-jone-server.vercel.app/orders?id=${id}`, {
+    fetch(`https://tour-jone-server.onrender.com/orders?id=${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
     })
@@ -38,7 +38,7 @@ const ManageAllProducts = () => {
     );
     if (confirmation) {
       fetch(
-        `https://tour-jone-server.vercel.app
+        `https://tour-jone-server.onrender.com
 /orders/${id}`,
         {
           method: "DELETE",

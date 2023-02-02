@@ -5,7 +5,7 @@ import Product from "../../Shared/product/product";
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("https://tour-jone-server.vercel.app/products")
+    fetch("https://tour-jone-server.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data.products));
   }, []);

@@ -6,7 +6,7 @@ const MakeAdmin = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     const user = { email: data.email };
-    fetch("https://tour-jone-server.vercel.app/users/admin", {
+    fetch("https://tour-jone-server.onrender.com/users/admin", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(user),

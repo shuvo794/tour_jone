@@ -98,7 +98,7 @@ const useFirebase = () => {
       if (user) {
         setUser(user);
         setAdminLoading(true);
-        fetch(`https://tour-jone-server.vercel.app/users/${user?.email}`)
+        fetch(`https://tour-jone-server.onrender.com/users/${user?.email}`)
           .then((res) => res.json())
           .then((data) => setAdmin(data.admin))
           .finally(() => setAdminLoading(false));
@@ -112,7 +112,7 @@ const useFirebase = () => {
   // save the registered use to the mongo database
   const saveUserToDB = (name, email) => {
     const user = { name, email };
-    fetch("https://tour-jone-server.vercel.app/users", {
+    fetch("https://tour-jone-server.onrender.com/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
