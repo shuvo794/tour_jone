@@ -6,7 +6,7 @@ The Management Information System (MIS) is a concept which is very important for
 
 ##Technologies Used for Building the site
 
-React JS 
+React JS
 Full Project is Based on ReactJS. We have used many components to Build the site.
 
 MATERIAL-UI
@@ -15,10 +15,10 @@ We have Used MATERIAL-UI to design our site .
 MongoDB
 We have Used MongoDB to use Database .
 
-Render 
+Render
 We have Used Render to Host our Server Site .
 
-Firebase 
+Firebase
 Full Project is Based on Firebase. We have used Google and Github Authentication..
 
 Font Awesome Icons
@@ -29,4 +29,4 @@ HTML & CSS is a core part for building a site. I have also used HTML & CSS.
 
 Firebase LIVE SITE LINK
 
-LiveSite --click to view Live Site
+LiveSite : tour-site-client.web.app
